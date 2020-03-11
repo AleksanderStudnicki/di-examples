@@ -1,0 +1,3 @@
+= CoffeeInject
+
+This is simple dependency injection tool for Java projects. To run this project you should have JDK 11 and Maven 3.6.3.
