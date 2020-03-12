@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.coffee.inject</groupId>
+    <groupId>com.coffeeMaker.inject</groupId>
     <artifactId>workshops</artifactId>
     <version>0.1</version>
     <name>CoffeeInject</name>
     <description>Dependency Injection Workshops</description>
-    <url>gitlab.com/KrzysiekJodlowski/coffee-inject</url>
+    <url>gitlab.com/KrzysiekJodlowski/coffeeMaker-inject</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,6 +51,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.2.2</version>
+        </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -148,7 +153,7 @@
                         <index>true</index>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.coffee.inject.test.Main</mainClass>
+                            <mainClass>com.coffeeMaker.inject.test.Main</mainClass>
                         </manifest>
                         <manifestEntries>
                             <mode>development</mode>
